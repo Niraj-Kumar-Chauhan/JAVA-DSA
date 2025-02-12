@@ -18,6 +18,7 @@
 //         int num = sc.nextInt();
 //         convertBinToDec(num);
 //     }
+
 // }
 
 
