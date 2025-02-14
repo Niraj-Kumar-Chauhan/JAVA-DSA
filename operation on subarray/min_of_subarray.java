@@ -1,23 +1,25 @@
 public class min_of_subarray {
     public static int minOfSubarray(int arr[]){
-        int maxNum = Integer.MAX_VALUE;
+        int minNum = Integer.MAX_VALUE;
         for(int i = 0; i<arr.length; i++){
             for(int j = i; j<arr.length; j++){
-                int sum = 0;
+                int curSum = 0;
                 for(int k = i; k<=j; k++){
                     System.out.print(arr[k] + " ");
-                    sum = sum + arr[k];
+                    curSum = curSum + arr[k];
                 }
                 System.out.print("  ");
-                maxNum = Math.min(sum , maxNum);
+                if(minNum > curSum){
+                    minNum = curSum;
+                }
             }
             System.out.println();
         }
-        return maxNum;
+        return minNum;
     }
     public static void main(String args[]){
         int arr[] = {2 , 4 , 6 , -8 , 10};
-        int maxNo = minOfSubarray(arr);
-        System.out.println("Manimum sum of subarray is : " + maxNo);
+        int minNo = minOfSubarray(arr);
+        System.out.println("Manimum sum of subarray is : " + minNo);
     }
 }
