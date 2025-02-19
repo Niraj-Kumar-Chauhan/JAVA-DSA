@@ -1,3 +1,6 @@
+/*Given n non-negative integers representing an vlevation map
+ where the width of each bar is 1 , compute how much water it can trap after raining.*/
+ 
 import java.util.*;
 public class cal_volume_Of_water {
     public static int waterVolume(int height[]){
