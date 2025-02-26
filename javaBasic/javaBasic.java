@@ -75,15 +75,32 @@
 // }
 
 
+// import java.util.*;
+// public class javaBasic{
+//         public static void main(String args[]){
+//                 int a = 21;
+//                 float b = 32.5f;
+//                 long c = 33;
+//                 double d = 54;
+//                 double ans = a + b + c + d;
+//                 System.out.println(ans);
+               
+//         }
+// }
+
 import java.util.*;
 public class javaBasic{
-        public static void main(String args[]){
-                int a = 21;
-                float b = 32.5f;
-                long c = 33;
-                double d = 54;
-                double ans = a + b + c + d;
-                System.out.println(ans);
-               
+        public static void main(String[] args){
+                Scanner sc = new Scanner(System.in);
+                //int num = sc.nextInt();
+                int factSum = 0;
+                for(int i = 2; i<=3; i++){
+                   int fact = 1;
+                    for(int j = i; j>=1; j--){
+                        fact = fact*j;
+                    }
+                    factSum = factSum + fact;
+                }
+                System.out.println("factorial sum of 1 to 5 is : " + factSum );
         }
 }

@@ -19,7 +19,7 @@ public class Buy_Sell_Stock {
         }
         return profit;
     }
-    public static void main(String args[]){
+    public static void main(String[] args){
         int prices[] = {7 , 1 , 5 , 3 , 6 ,4};
         int ProfitStock = BuySellStock(prices);
         System.out.println("Maximum profit of the stock is : " + ProfitStock);
