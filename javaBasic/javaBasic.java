@@ -88,19 +88,37 @@
 //         }
 // }
 
+// import java.util.*;
+// public class javaBasic{
+//         public static void main(String[] args){
+//                 Scanner sc = new Scanner(System.in);
+//                 //int num = sc.nextInt();
+//                 int factSum = 0;
+//                 for(int i = 2; i<=3; i++){
+//                    int fact = 1;
+//                     for(int j = i; j>=1; j--){
+//                         fact = fact*j;
+//                     }
+//                     factSum = factSum + fact;
+//                 }
+//                 System.out.println("factorial sum of 1 to 5 is : " + factSum );
+//         }
+// }
+
+
 import java.util.*;
 public class javaBasic{
-        public static void main(String[] args){
-                Scanner sc = new Scanner(System.in);
-                //int num = sc.nextInt();
-                int factSum = 0;
-                for(int i = 2; i<=3; i++){
-                   int fact = 1;
-                    for(int j = i; j>=1; j--){
-                        fact = fact*j;
-                    }
-                    factSum = factSum + fact;
+        public static void count(int arr[]){
+                int count[] = new int[8];
+                for(int i = 0; i<arr.length; i++){
+                    count[arr[i]]++;
+                    System.out.print(count[arr[i]] + " ");
                 }
-                System.out.println("factorial sum of 1 to 5 is : " + factSum );
+        }
+        public static void main(String[] args){
+            int arr[] = {1 , 4,6 ,3,6 , 7};
+                
+            count(arr);
         }
 }
+
