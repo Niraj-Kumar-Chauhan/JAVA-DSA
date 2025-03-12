@@ -4,6 +4,7 @@ public class checkAnagrams {
     public static void main(String args[]){
         String str1 = "earth";
         String str2 = "heart";
+        
         str1 = str1.toLowerCase();
         str2 = str2.toLowerCase();
         if(str1.length() == str2.length()){
