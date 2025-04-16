@@ -14,6 +14,7 @@ public class Remove_duplicate {
             removDuplicate(str, idx+1, newstr, map);
         }else{
             map[currChar - 'a'] = true;
+            //newstr.append(currChar);
             removDuplicate(str, idx+1, newstr.append(currChar), map);
         }
     }
